@@ -20,7 +20,7 @@ public class WebhookService {
     private final TelegramUsersRepository telegramUsersRepository;
 
     public void whenStart(Update update){
-        SendMessage sendMessage = new SendMessage(update.getMessage().getChatId().toString(), "Xush kelibsan jonim,Shirinim Fefu");
+        SendMessage sendMessage = new SendMessage(update.getMessage().getChatId().toString(), "Xush kelibsan");
         var result = restTemplate.postForObject(
                 RestConstants.TELEGRAM_BASE_URL + RestConstants.BOT +
                         RestConstants.SECRET_TOKEN + "/sendMessage", sendMessage, ResultTelegram.class);
@@ -31,7 +31,7 @@ public class WebhookService {
     }
 
     public void hello(Update update){
-        SendMessage sendMessage = new SendMessage(update.getMessage().getChatId().toString(), "Salom Fefuyim meni dunyoyim\uD83D\uDE0D\uD83E\uDD70\uD83D\uDE18❤️");
+        SendMessage sendMessage = new SendMessage(update.getMessage().getChatId().toString(), "Salom n nnnnnnnnnnnnnnnnnnnnnnnnnnn️");
         Object o = restTemplate.postForObject(
                 RestConstants.TELEGRAM_BASE_URL + RestConstants.BOT +
                         RestConstants.SECRET_TOKEN + "/sendMessage", sendMessage, Object.class);
@@ -39,7 +39,7 @@ public class WebhookService {
     }
 
     public void defaultNot(Update update){
-        SendMessage sendMessage = new SendMessage(update.getMessage().getChatId().toString(), "Lug'atimizda bunaqa so'z yuq tovuq miyamisan echkimisan \uD83D\uDE02\uD83E\uDD26\u200D♂️");
+        SendMessage sendMessage = new SendMessage(update.getMessage().getChatId().toString(), "Lug'atimizda bunaqa so'z yuq ️");
         Object o = restTemplate.postForObject(
                 RestConstants.TELEGRAM_BASE_URL  + RestConstants.BOT +
                         RestConstants.SECRET_TOKEN + "/sendMessage", sendMessage, Object.class);
